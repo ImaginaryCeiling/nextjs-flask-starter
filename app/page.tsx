@@ -5,7 +5,7 @@ export default function Home() {
   const [message, setMessage] = useState('Loading')
 
 useEffect(() => {
-  fetch('/api/hello')
+  fetch('http://localhost:5328/api/hello')
     .then((res) => res.json())
     .then((data) => setMessage(data.message))
 } , [])
